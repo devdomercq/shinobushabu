@@ -22,6 +22,7 @@ gem 'bootstrap-sass', '3.2.0'
 gem 'font-awesome-sass', '~> 4.7.0'
 # CSS Animations - for awesomesness!
 gem 'animate.css-rails', '~> 3.2.0'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
