@@ -1,0 +1,219 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "animate";
+
+// Global Styling
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  overflow-x: hidden; 
+
+}
+body {
+    margin-bottom: -60px;
+    overflow-x: none;
+}
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+//Typography
+
+h1, h2, p, span, a {
+    font-family: "museo-sans", helvetica, sans-serif;
+    color: #white;
+    margin: 0;
+    padding: 0;
+}
+
+
+// Navigation Styling
+nav, footer {
+  background: #e52d27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 13.5px;
+  font-weight:bold;
+  color: white !important;
+
+}
+
+li{
+  color: white !important;
+
+  word-spacing: 5px !important;
+  padding-top: 20px;
+
+}
+
+.shinobu-logo {
+  height:130px;
+  margin-top: -10px;
+  position:fixed;
+}
+
+div#bs-example-navbar-collapse-1 {
+  height: 368px;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none !important;
+  padding-left: 150px;
+    
+}
+.nav a {
+  top: 10px;
+
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #dc4642 !important;
+ }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+.color_animation {
+  text-decoration: initial;
+  word-spacing: 5px;
+  color: white !important;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+.color_animation:hover{
+    color: black !important;
+}
+
+
+//Footer
+
+p.sub-footer-text{
+    color: white;
+    font-size:16px;
+
+}
+
+p.sub-footer-text a{
+    color: white;
+    text-decoration: none;
+
+}
+
+div.fa {
+    display: block;
+    padding: 30px 0px 25px 0px;
+}
+
+div .fa-2x {
+    padding: 30px 0px 25px 0px;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+.navbar-default {
+    border: 0 !important;
+}
+
+footer.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+   padding: 20px;
+  height: 60px;
+  overflow-x: none;
+
+
+}
+
+//Welcome Section
+
+.starter_container {
+    margin-top: -60px;
+    padding: 0;
+    min-width: 100%;
+    height: 100%;
+    background: url('welcome_background.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    margin-bottom: -4px;
+
+
+    
+}
+.menu_container {
+    margin-top: -60px;
+    padding: 0;
+    min-width: 100%;
+    height: 100%;
+    background: url('..//images/watermark.png') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    margin-bottom: -4px;
+
+    
+}
+
+.follow_container {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    text-align: center;
+}
+
+.top-title{
+    color: white;
+    font-family: 'Tangerine', cursive;
+    font-size: 220px;
+    font-weight: 700;
+    text-shadow: -3px 0 #000000,0 3px #000000,3px 0 #000000,0 -3px #000000;
+
+ }
+.second-title {
+    font-weight: lighter; 
+    font-size: 30px; 
+    font-style: italic; 
+    text-transform: capitalize;
+    text-shadow: -1px 0 #000000,0 1px #000000,1px 0 #000000,0 -1px #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 7px;;
+}
+
+.white{
+    color: white;
+}
